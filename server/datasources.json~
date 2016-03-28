@@ -1,0 +1,42 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql_mentory": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "mentory",
+    "password": "root",
+    "name": "mysql_mentory",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "mongo_mentory": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "mentory",
+    "name": "mongo_mentory",
+    "connector": "mongodb"
+  },
+  "mailgun": {
+  	"name": "mailgun",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "aleramirez9417@gmail.com",
+          "pass": "botitas90"
+        }
+      }
+    ]
+
+  }
+}

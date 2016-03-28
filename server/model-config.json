@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Book": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Category": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Mentory": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Payment": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Person": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "UserReview": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PersonCategory": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

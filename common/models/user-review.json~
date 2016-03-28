@@ -1,0 +1,72 @@
+{
+  "name": "UserReview",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "mentory",
+    "table": "User_Review"
+  },
+  "properties": {
+    "iduser": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "idUser",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "message": {
+      "type": "String",
+      "required": false,
+      "length": 500,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "message",
+        "dataType": "varchar",
+        "dataLength": 500,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "idreview": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "idReviewer",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "idUser"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

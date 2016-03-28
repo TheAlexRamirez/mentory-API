@@ -1,0 +1,30 @@
+
+
+module.exports = function(app) {
+var Person= app.models.Person;
+ var Role = app.models.Role;
+  var RoleMapping = app.models.RoleMapping;
+
+Person.create([
+    {username: 'Alex', email: 'alex@mentory.co', password: 'pantro90'}
+], function(err, users) {
+    if (err) throw err;
+
+    Role.create({
+      name: 'admin'
+    }, function(err, role) {
+      if (err) throw err;
+ 
+      // Make Bob an admin
+      role.principals.create({
+        principalType: RoleMapping.USER,
+        principalId: users[0].id
+      }, function(err, principal) {
+        if (err)  throw err
+      });
+    });
+  });
+
+
+
+};
