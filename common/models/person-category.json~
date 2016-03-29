@@ -6,7 +6,16 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "idcategory": {
+      "type": "number",
+      "id": true
+    },
+    "iduser": {
+      "type": "number",
+      "id": true
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [

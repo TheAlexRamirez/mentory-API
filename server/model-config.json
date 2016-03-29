@@ -73,5 +73,11 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "MentoryCategory": {
+    "dataSource": "mongo_mentory",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

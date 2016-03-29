@@ -170,22 +170,6 @@
       },
       "_selectable": true
     },
-    "type": {
-      "type": "String",
-      "required": false,
-      "length": 20,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "type",
-        "dataType": "varchar",
-        "dataLength": 20,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "description": {
       "type": "String",
       "required": false,
@@ -332,6 +316,22 @@
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "isMentor": {
+      "type": "boolean",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "type",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
     }
   },
   "validations": [],
@@ -339,7 +339,6 @@
     "categories": {
       "type": "hasAndBelongsToMany",
       "model": "Category",
-      "foreignKey": "iduser",
       "through": "PersonCategory"
     },
     "userReviews": {
@@ -350,8 +349,7 @@
     "mentories": {
       "type": "hasMany",
       "model": "Mentory",
-      "foreignKey": "iduser",
-      "through": "Book"
+      "foreignKey": "iduser"
     }
   },
   "acls": [
@@ -376,12 +374,6 @@
       "permission": "ALLOW"
     },
     {
-      "accessType": "WRITE",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
@@ -398,6 +390,20 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "create"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "__create__categories"
     }
   ],
   "methods": {}
