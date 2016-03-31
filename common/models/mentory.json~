@@ -130,7 +130,6 @@
     "categories": {
       "type": "hasAndBelongsToMany",
       "model": "Category",
-      "foreignKey": "idmentory",
       "through": "MentoryCategory"
     },
     "person": {
