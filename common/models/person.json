@@ -138,22 +138,6 @@
       },
       "_selectable": true
     },
-    "profileImage": {
-      "type": "String",
-      "required": false,
-      "length": 200,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "profile_image",
-        "dataType": "varchar",
-        "dataLength": 200,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
     "phone": {
       "type": "String",
       "required": false,
@@ -327,6 +311,22 @@
         "columnName": "type",
         "dataType": "varchar",
         "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "profileimage": {
+      "type": "String",
+      "required": false,
+      "length": 200,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "profile_image",
+        "dataType": "varchar",
+        "dataLength": 200,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"

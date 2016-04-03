@@ -10,70 +10,6 @@
     "table": "Book"
   },
   "properties": {
-    "iduser": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "idUser",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "idmentory": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "idMentory",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "status": {
-      "type": "String",
-      "required": false,
-      "length": 100,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "status",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "time": {
-      "type": "Date",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "time",
-        "dataType": "timestamp",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "confirmeddate": {
       "type": "Date",
       "required": false,
@@ -106,10 +42,42 @@
       },
       "_selectable": true
     },
+    "idmentory": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "idMentory",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "iduser": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "idUser",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "idbook": {
       "type": "Number",
       "id": true,
-      "required": true,
+      "required": false,
       "index": true,
       "length": null,
       "precision": 10,
@@ -123,6 +91,37 @@
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "status": {
+      "type": "String",
+      "required": false,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "varchar",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "time": {
+      "type": "any"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "estimatedtime": {
+      "type": "number"
+    },
+    "probDate1": {
+      "type": "date"
+    },
+    "probDate2": {
+      "type": "date"
     }
   },
   "validations": [],
