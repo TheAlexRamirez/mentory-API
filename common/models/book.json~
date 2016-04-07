@@ -77,7 +77,6 @@
     "idbook": {
       "type": "Number",
       "id": true,
-      "generated": true,
       "required": false,
       "index": true,
       "length": null,
