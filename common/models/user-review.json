@@ -61,8 +61,8 @@
       },
       "_selectable": false
     },
-    "iduserreview": {
-      "type": "any"
+    "idreviewer": {
+      "type": "number"
     }
   },
   "validations": [],
