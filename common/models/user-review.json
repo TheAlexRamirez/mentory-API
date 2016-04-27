@@ -45,6 +45,7 @@
     "idreview": {
       "type": "Number",
       "id": true,
+      "generated": true,
       "required": false,
       "index": true,
       "length": null,
@@ -59,6 +60,9 @@
         "nullable": "N"
       },
       "_selectable": false
+    },
+    "iduserreview": {
+      "type": "any"
     }
   },
   "validations": [],

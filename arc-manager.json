@@ -5,7 +5,7 @@
   },
   "models": {
     "ManagerHost": {
-      "9305dd19-b1b9-4fa1-b65e-3255b18b2ba1": "{\"id\":\"9305dd19-b1b9-4fa1-b65e-3255b18b2ba1\",\"host\":\"mentory.co\",\"port\":8701,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1459696083873,\"error\":{\"message\":\"connect ECONNREFUSED 45.55.27.71:8701\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null,\"$$hashKey\":\"object:208\",\"isHostProblem\":true}"
+      "9305dd19-b1b9-4fa1-b65e-3255b18b2ba1": "{\"id\":\"9305dd19-b1b9-4fa1-b65e-3255b18b2ba1\",\"host\":\"mentory.co\",\"port\":8701,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1459696083873,\"error\":{\"message\":\"connect ETIMEDOUT 45.55.27.71:8701\"},\"errorType\":\"unknown\",\"app\":null,\"processes\":null,\"$$hashKey\":\"object:208\",\"isHostProblem\":true}"
     },
     "LoadBalancer": {}
   }
