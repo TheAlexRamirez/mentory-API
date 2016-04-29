@@ -93,6 +93,14 @@
       },
       "_selectable": false
     },
+    "iduserbooked": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "_selectable": false
+    },
     "status": {
       "type": "String",
       "required": false,
@@ -132,10 +140,10 @@
       "model": "Person",
       "foreignKey": "iduser"
     },
-    "mentory": {
+    "booked": {
       "type": "belongsTo",
-      "model": "Mentory",
-      "foreignKey": "idmentory"
+      "model": "Person",
+      "foreignKey": "iduserbooked"
     }
   },
   "acls": [

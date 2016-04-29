@@ -332,6 +332,30 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "imgcompany": {
+      "type": "string",
+      "required": false,
+      "length": 200,
+      "precision": null,
+      "scale": null
+    },
+    "imgfront": {
+      "type": "string",
+      "required": false,
+      "length": 200,
+      "precision": null,
+      "scale": null
+    },
+    "cost": {
+      "type": "number"
+    },
+    "videourl": {
+      "type": "string",
+      "required": false,
+      "length": 200,
+      "precision": null,
+      "scale": null
     }
   },
   "validations": [],
@@ -345,9 +369,9 @@
       "type": "hasMany",
       "model": "UserReview"
     },
-    "mentories": {
+    "bookings": {
       "type": "hasMany",
-      "model": "Mentory"
+      "model": "Book"
     }
   },
   "acls": [
