@@ -343,8 +343,7 @@
     },
     "userReviews": {
       "type": "hasMany",
-      "model": "UserReview",
-      "foreignKey": "idreview"
+      "model": "UserReview"
     },
     "mentories": {
       "type": "hasMany",

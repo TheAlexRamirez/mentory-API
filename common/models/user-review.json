@@ -62,6 +62,17 @@
       "_selectable": false
     },
     "idreviewer": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "_selectable": false
+    },
+    "created": {
+      "type": "date"
+    },
+    "raiting": {
       "type": "number"
     }
   },
@@ -71,6 +82,11 @@
       "type": "belongsTo",
       "model": "Person",
       "foreignKey": "iduser"
+    },
+    "reviewer": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "idreviewer"
     }
   },
   "acls": [
