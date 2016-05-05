@@ -42,22 +42,6 @@
       },
       "_selectable": true
     },
-    "idmentory": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "idMentory",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "iduser": {
       "type": "Number",
       "required": false,

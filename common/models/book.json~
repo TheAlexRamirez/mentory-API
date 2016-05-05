@@ -77,6 +77,7 @@
     "idbook": {
       "type": "Number",
       "id": true,
+      "generated": true,
       "required": false,
       "index": true,
       "length": null,
@@ -90,6 +91,14 @@
         "dataScale": 0,
         "nullable": "N"
       },
+      "_selectable": false
+    },
+    "iduserbooked": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "_selectable": false
     },
     "status": {
@@ -131,10 +140,10 @@
       "model": "Person",
       "foreignKey": "iduser"
     },
-    "mentory": {
+    "booked": {
       "type": "belongsTo",
-      "model": "Mentory",
-      "foreignKey": "idmentory"
+      "model": "Person",
+      "foreignKey": "iduserbooked"
     }
   },
   "acls": [
