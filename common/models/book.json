@@ -110,6 +110,9 @@
     "estimatedtime": {
       "type": "number"
     },
+    "cost": {
+      "type": "number"
+    },
     "probDate1": {
       "type": "date"
     },
