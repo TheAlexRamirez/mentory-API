@@ -26,7 +26,39 @@
       },
       "_selectable": true
     },
-    "code": {
+    "codeMentor": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "code",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "codeUser": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "code",
+        "dataType": "varchar",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "codeModerator": {
       "type": "String",
       "required": false,
       "length": 300,
@@ -107,10 +139,13 @@
     "reason": {
       "type": "string"
     },
+    "sessionid": {
+      "type": "string"
+    },
     "estimatedtime": {
       "type": "number"
     },
-    "estimatedtime": {
+    "cost": {
       "type": "number"
     },
     "probDate1": {

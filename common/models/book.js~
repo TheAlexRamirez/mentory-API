@@ -38,7 +38,6 @@ module.exports = function(Book) {
 				   data.codeMentor = tokenP1;
 				   data.codeUser = tokenP2;
 				   data.codeModerator = tokenMod;
-				   
 		  		   data.save();
 				});
 				
